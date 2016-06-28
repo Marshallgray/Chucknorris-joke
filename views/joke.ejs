@@ -1,0 +1,14 @@
+<% layout('layout') %>
+
+<div class="well col-xs-6 col-xs-offset-3">
+  <h1>Joke Page</h1>
+  <p><%- joke %></p>
+  <button type="button" onClick="refresh()" name="button" class="btn btn-info">New Joke</button>
+</div>
+
+
+<script type="text/javascript">
+  function refresh() {
+    location.reload()
+  }
+</script>
